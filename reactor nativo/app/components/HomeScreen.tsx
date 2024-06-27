@@ -8,13 +8,13 @@ interface Props {
 
 export const HomeScreen = ({ name }: Props) => {
   return (
-    <View style={GlobalStyles.hscontainer}>
+    <View>
       <Stack.Screen
         options={{
           title: "Inicio",
         }}
       />
-      <Text style={GlobalStyles.hsheaderTitle}>Bienvenido, {name ?? "spartan"}.</Text>
+      <Text style={GlobalStyles.title}>Bienvenido, {name ?? "spartan"}.</Text>
     </View>
   );
 };

@@ -9,7 +9,7 @@ export const Counter = () => {
 
   return (
     <View>
-      <Text style={GlobalStyles.countercounterText}>Contador:</Text>
+      <Text style={GlobalStyles.title}>Contador:</Text>
       <Text style={GlobalStyles.counterNum}> { count } </Text>
       <View style={GlobalStyles.counterbuttonscontainers}>
         <TouchableOpacity onPress={handleDecrement}>

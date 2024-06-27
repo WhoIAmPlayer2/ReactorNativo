@@ -21,11 +21,11 @@ export const Sensors = () => {
   }, []);
 
   return (
-      <View style={GlobalStyles.sensorContainer}>
-        <Text style={GlobalStyles.sensorText}>Sensores</Text>
-        <Text style={GlobalStyles.sensorText}>X: {data.x}</Text>
-        <Text style={GlobalStyles.sensorText}>Y: {data.y}</Text>
-        <Text style={GlobalStyles.sensorText}>Z: {data.z}</Text>
+      <View>
+        <Text style={GlobalStyles.title}>Sensores</Text>
+        <Text style={GlobalStyles.text}>X: {data.x}</Text>
+        <Text style={GlobalStyles.text}>Y: {data.y}</Text>
+        <Text style={GlobalStyles.text}>Z: {data.z}</Text>
       </View>
   );
 };

@@ -1,23 +1,14 @@
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ImageComponent, ScrollView, StyleSheet, View } from "react-native";
 import { HomeScreen } from "./components/HomeScreen";
 import { Counter } from "./components/Counter";
-import { Nombre } from "./components/Nombre";
-import { Edad } from "./components/Edad";
-import { Sensors } from "./components/Sensors";
 import GlobalStyles from "@/constants/GlobalStyles";
-import { Link } from "expo-router";
-
+import { PicDeck } from "./components/PicDeck";
 export default function Index() {
   return (
-    <ScrollView style={GlobalStyles.indexcontainer}>
-      {/* Opcionalmente pasar prop "name" */}
+    <ScrollView style={GlobalStyles.container}>
       <HomeScreen />
+      <PicDeck /> 
       <Counter />
-      {/* <View>
-          <Nombre />
-          <Edad />
-      </View> */}
-      <Sensors />
     </ScrollView>
   );
 }
