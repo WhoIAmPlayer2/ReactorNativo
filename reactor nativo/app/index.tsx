@@ -1,14 +1,16 @@
-import { ImageComponent, ScrollView, StyleSheet, View } from "react-native";
+import { ImageComponent, View, StyleSheet } from "react-native";
 import { HomeScreen } from "./components/HomeScreen";
 import { Counter } from "./components/Counter";
 import GlobalStyles from "@/constants/GlobalStyles";
 import { PicDeck } from "./components/PicDeck";
+import { Menu } from "./components/Menu";
 export default function Index() {
   return (
-    <ScrollView style={GlobalStyles.container}>
+    <View style={GlobalStyles.container}>
       <HomeScreen />
-      <PicDeck /> 
+      <Menu />
+      {/* <PicDeck />  */}
       <Counter />
-    </ScrollView>
+    </View>
   );
 }
