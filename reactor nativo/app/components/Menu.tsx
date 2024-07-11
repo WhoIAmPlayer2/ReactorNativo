@@ -9,10 +9,11 @@ interface Link {
 
 export const Menu = () => {
   const menuLinks: Link[] = [
-    { name: "About", path: "/(pages)/about" },
-    { name: "Contact", path: "/(pages)/contact" },
-    { name: "Location", path: "/(pages)/location" },
     { name: "Sensors", path: "/(pages)/sensors" },
+    { name: "Balance", path: "/(pages)/balance" },
+    { name: "Contact", path: "/(pages)/contact" },
+    { name: "About", path: "/(pages)/about" },
+    { name: "Location", path: "/(pages)/location" },
   ];
   return (
     <View style={GlobalStyles.container}>

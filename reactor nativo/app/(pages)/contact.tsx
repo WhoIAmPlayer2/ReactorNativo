@@ -8,6 +8,9 @@ export default function Contact() {
       <Stack.Screen
         options={{
           title: "Contacto",
+          headerStyle: {
+            backgroundColor: '#A0FFA0'
+          }
         }}
       />
       <Text style={GlobalStyles.title}>Información de Contacto</Text>

@@ -7,7 +7,10 @@ export default function About() {
     <View style={GlobalStyles.container}>
       <Stack.Screen
         options={{
-          title: "About",
+          title: "Acerca de",
+          headerStyle: {
+            backgroundColor: '#ffA0A0', // Cambia esto al color que desees
+          }
         }}
       />
     <Text style={GlobalStyles.title}>Acerca de</Text>

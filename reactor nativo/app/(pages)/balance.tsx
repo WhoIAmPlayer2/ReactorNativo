@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
-import { Sensors } from "../components/Sensors";
+import { Balance } from "../components/Balance";
 import GlobalStyles from "@/constants/GlobalStyles";
 
 export default function About() {
@@ -8,15 +8,13 @@ export default function About() {
     <View style={GlobalStyles.container}>
         <Stack.Screen
         options={{
-          title: "Sensor",
+          title: "Balance",
           headerStyle: {
-            backgroundColor: '#F0A030'
+            backgroundColor: '#A0A0F0'
           }
-          
         }}
       />
-      <Sensors />
+      <Balance />
   </View>
   );
 }
-

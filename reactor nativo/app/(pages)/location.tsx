@@ -8,6 +8,9 @@ export default function Location() {
       <Stack.Screen
         options={{
           title: "Ubicación",
+          headerStyle: {
+            backgroundColor: '#FF6', // Cambia esto al color que desees
+          },
         }}
       />
       <Text style={GlobalStyles.title}>Ubicación</Text>
