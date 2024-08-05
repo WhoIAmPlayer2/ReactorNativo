@@ -1,7 +1,9 @@
 import { Stack } from "expo-router";
 import { View } from "react-native";
 import { Sensors } from "../components/Sensors";
+import { GyroscopeComponent } from "../components/Gyroscope";
 import GlobalStyles from "@/constants/GlobalStyles";
+import { LightSensorComponent } from "../components/LightSensor";
 
 export default function sensor() {
   return (
@@ -16,6 +18,8 @@ export default function sensor() {
         }}
       />
       <Sensors />
+      <GyroscopeComponent />
+      <LightSensorComponent />
   </View>
   );
 }
